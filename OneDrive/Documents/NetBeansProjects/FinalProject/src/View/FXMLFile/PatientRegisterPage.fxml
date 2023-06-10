@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="722.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PatientRegisterPageController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="58.0" prefHeight="660.0" prefWidth="561.0" style="-fx-background-color: #040d12;">
+         <children>
+            <AnchorPane layoutX="81.0" layoutY="45.0" prefHeight="609.0" prefWidth="405.0" style="-fx-background-color: #ef5;">
+               <children>
+                  <Label layoutX="48.0" layoutY="74.0" prefHeight="42.0" prefWidth="95.0" text="User Name :" textFill="#070404">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="usernameTF" layoutX="164.0" layoutY="74.0" prefHeight="42.0" prefWidth="178.0" promptText="User_Name" style="-fx-background-radius: 40;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="48.0" layoutY="129.0" prefHeight="42.0" prefWidth="87.0" text="Password :" textFill="#070404">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="passTF" accessibleRole="PASSWORD_FIELD" layoutX="164.0" layoutY="129.0" prefHeight="42.0" prefWidth="178.0" promptText="Password" style="-fx-background-radius: 40;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="42.0" layoutY="304.0" prefHeight="42.0" prefWidth="87.0" text="Email :" textFill="#070404">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="EmailTF" layoutX="164.0" layoutY="304.0" prefHeight="42.0" prefWidth="178.0" promptText="Email" style="-fx-background-radius: 40;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="42.0" layoutY="14.0" prefHeight="42.0" prefWidth="87.0" text="ID :" textFill="#070404">
+                     <font>
+                        <Font name="Calibri Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="IDTF" layoutX="164.0" layoutY="14.0" prefHeight="42.0" prefWidth="178.0" promptText="ID" style="-fx-background-radius: 40;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="48.0" layoutY="187.0" prefHeight="42.0" prefWidth="95.0" text="First_name :" textFill="#070404">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="FNTF" layoutX="164.0" layoutY="187.0" prefHeight="42.0" prefWidth="178.0" promptText="First_Name" style="-fx-background-radius: 40;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="42.0" layoutY="247.0" prefHeight="42.0" prefWidth="95.0" text="Last_name :" textFill="#070404">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="LNTF" layoutX="164.0" layoutY="247.0" prefHeight="42.0" prefWidth="178.0" promptText="Last_Name" style="-fx-background-radius: 40;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="42.0" layoutY="355.0" prefHeight="42.0" prefWidth="87.0" text="Phone :" textFill="#070404">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="phoneTF" layoutX="164.0" layoutY="355.0" prefHeight="42.0" prefWidth="178.0" promptText="Phone" style="-fx-background-radius: 40;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Label alignment="CENTER" layoutX="48.0" layoutY="452.0" prefHeight="42.0" prefWidth="87.0" text="Gender :" textFill="#070404">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="maler" layoutX="174.0" layoutY="447.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="87.0" text="Male">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="femlaeR" layoutX="253.0" layoutY="447.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="87.0" text="Female">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </RadioButton>
+                  <Label alignment="CENTER" layoutX="46.0" layoutY="494.0" prefHeight="42.0" prefWidth="87.0" text="Role :" textFill="#070404">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="adminR" layoutX="174.0" layoutY="494.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="87.0" text="Admin">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="PatientR" layoutX="253.0" layoutY="494.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="87.0" text="Patient">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </RadioButton>
+                  <Button fx:id="registerButton" layoutX="86.0" layoutY="553.0" mnemonicParsing="false" onAction="#changeSceneToLoginPage" prefHeight="42.0" prefWidth="234.0" style="-fx-background-color: #9cfe95; -fx-background-radius: 30;" text="Register">
+                     <font>
+                        <Font name="Ebrima" size="18.0" />
+                     </font>
+                  </Button>
+                  <Label alignment="CENTER" layoutX="52.0" layoutY="406.0" prefHeight="42.0" prefWidth="87.0" text="AGE :" textFill="#070404">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="AgeTF" layoutX="164.0" layoutY="406.0" prefHeight="42.0" prefWidth="178.0" promptText="Age" style="-fx-background-radius: 40;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="162.0" layoutY="14.0" prefHeight="31.0" prefWidth="276.0" text="Registeration Page " textFill="#000000b2">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

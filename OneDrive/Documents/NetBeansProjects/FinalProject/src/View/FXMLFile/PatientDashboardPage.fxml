@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="1330.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.PatientDashboardPageController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="66.0" prefHeight="1250.0" prefWidth="877.0" style="-fx-background-color: #4b9fc5;">
+         <children>
+            <Button fx:id="showFreeAppointmentsB" layoutX="36.0" layoutY="225.0" mnemonicParsing="false" onAction="#ShowAllFreeAppointments" prefHeight="50.0" prefWidth="355.0" style="-fx-background-color: #e70f2bba; -fx-background-radius: 30;" text="Show All Free Appoinments">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="BookingFreeAppointemntsB" layoutX="499.0" layoutY="225.0" mnemonicParsing="false" onAction="#BookingFreeAppointments" prefHeight="50.0" prefWidth="355.0" style="-fx-background-color: #e70f2b2b; -fx-background-radius: 30;" text="Book an Free Appoinment">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="showFinishedBookedAppointmentsB" layoutX="508.0" layoutY="737.0" mnemonicParsing="false" onAction="#ShowFinishedBookedAppointments" prefHeight="50.0" prefWidth="355.0" style="-fx-background-radius: 30; -fx-background-color: #40e50de8;" text="Show all Finished Booked Appointments" />
+            <Button fx:id="logoutButton" alignment="CENTER" layoutX="652.0" layoutY="1186.0" mnemonicParsing="false" onAction="#ChangeSceneToPatientLoginPage" prefHeight="50.0" prefWidth="202.0" style="-fx-background-color: #e70f2b;" text="LOG OUT" textFill="#e8e4e4">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <TableView fx:id="TableView_Free" layoutX="37.0" layoutY="319.0" prefHeight="400.0" prefWidth="812.0">
+              <columns>
+                <TableColumn fx:id="ID_column" prefWidth="119.0" text="ID" />
+                <TableColumn fx:id="Appointment_Date_Column" prefWidth="151.0" text="Appointment_Date" />
+                  <TableColumn fx:id="Appointment_Day_column" prefWidth="185.0" text="Appointment_Day" />
+                  <TableColumn fx:id="Appointment_Time_Column" prefWidth="174.0" text="Appointment_Time " />
+                  <TableColumn fx:id="Status_column" prefWidth="182.0" text="Status" />
+              </columns>
+            </TableView>
+            <TableView fx:id="TableView_Booked" layoutX="37.0" layoutY="838.0" prefHeight="330.0" prefWidth="822.0">
+              <columns>
+                <TableColumn minWidth="0.0" prefWidth="0.0" text="C2" />
+                  <TableColumn fx:id="ID2_column" prefWidth="113.0" text="ID" />
+                  <TableColumn fx:id="Appointment_ID_Column" prefWidth="164.0" text="Appointment_ID" />
+                  <TableColumn fx:id="User_ID_Column" prefWidth="164.0" text="User_ID" />
+                  <TableColumn fx:id="Status_Column" prefWidth="164.0" text="Status" />
+                  <TableColumn fx:id="Doctor_Comment_Column" prefWidth="215.0" text="Doctor_Comment" />
+              </columns>
+            </TableView>
+            <Label alignment="CENTER" layoutX="246.0" layoutY="24.0" prefHeight="36.0" prefWidth="385.0" text="Welcome To Patient Control Panel" textFill="#111414">
+               <font>
+                  <Font name="System Bold Italic" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="80.0" layoutY="14.0" prefHeight="36.0" prefWidth="255.0" text="Patient Dashboard" textFill="#5e4e4e">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
